@@ -51,3 +51,42 @@ nav a {
   margin: 10px;
   border-radius: 10px;
 }
+
+/* ===== Стиль кнопки ===== */
+.hero-btn {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ff7a18, #af002d);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255,122,24,0.4);
+}
+
+/* Плавне збільшення і легке обертання при наведенні */
+.hero-btn:hover {
+  transform: scale(1.1) rotate(-1deg);
+  box-shadow: 0 15px 25px rgba(255,122,24,0.6);
+}
+
+/* Ефект блиску на кнопці */
+.hero-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 60%);
+  transform: rotate(25deg);
+  transition: all 0.7s ease;
+}
+
+.hero-btn:hover::before {
+  left: 100%;
+}

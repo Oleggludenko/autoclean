@@ -26,7 +26,7 @@ nav a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('images/car1.jpg') center/cover;
+  background: url('images/car1.jpg') center/cover no-repeat;
 }
 
 .section {
